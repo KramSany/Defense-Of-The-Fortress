@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://kt82f8jaxkx0"]
+
+[ext_resource type="Script" path="res://leveldesign.cs" id="1_oygwl"]
+[ext_resource type="PackedScene" uid="uid://dn354ux6b8c7w" path="res://bg.tscn" id="2_famfb"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_oygwl")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 481.0
+offset_top = 130.0
+offset_right = 739.0
+offset_bottom = 214.0
+theme_override_font_sizes/font_size = 30
+text = "Play"
+icon_alignment = 1
+
+[node name="Play2" type="Button" parent="."]
+offset_left = 481.0
+offset_top = 328.0
+offset_right = 739.0
+offset_bottom = 412.0
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[node name="BG" parent="." instance=ExtResource("2_famfb")]
+
+[connection signal="pressed" from="Play" to="." method="SwitchToLevel"]
+[connection signal="pressed" from="Play2" to="." method="_on_play_2_pressed"]
