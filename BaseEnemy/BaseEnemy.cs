@@ -8,6 +8,7 @@ public partial class BaseEnemy : Node2D
 	ProgressBar progressBar = new ProgressBar();
 
 	public float HealthBaseEnemy = 100;
+	public float Damage = 40.0f;
 	SwordUnit sword = new();
 	bool death = false;
 	
@@ -37,8 +38,9 @@ public partial class BaseEnemy : Node2D
 
 	private void _on_timer_timeout() // Timer??
 	{
-		progressBar.Value-= sword.DamagePerSecond;
-		HealthBaseEnemy -= sword.DamagePerSecond;
+		progressBar.Value-= sword.DamageUnit;
+		HealthBaseEnemy -= sword.DamageUnit;
+		sword.TakeDamage(Damage);
 		
 	}
 
