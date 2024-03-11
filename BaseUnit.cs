@@ -7,7 +7,6 @@ public partial class BaseUnit : CharacterBody2D
     public UnitType UnitType { get; protected set; } = UnitType.None;
      protected AnimatedSprite2D _animatedSprite;
      public float Health { get; set; }
-     public float DamagePerSecnod { get; set; }
     protected float MoveSpeed = 40.0f;
     protected Vector2 gravity = new Vector2(0, 800.0f);
     private List<Type> validNodeTypes = new List<Type> { typeof(AxeUnit), typeof(SwordUnit) };
