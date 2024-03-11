@@ -6,17 +6,15 @@ public partial class BasePlayer : Node2D
 {
 	private string axeUnit = "res://Persons/Woodcutter/AxeMan.tscn";
 	private string swordUnit = "res://Mobs/SwordPerson.tscn";
-	[Export] 
-	private float helathPointBase = 400.0f;
-	[Export] 
-	private float money = 500.0f;
-	[Export]
+
+	private float helathPointBase = 100.0f;
+
+	private float money = 10000.0f;
+
 	private float costAxeUnit = 100.0f;
-	[Export] 
+
 	private float costSwordUnit = 250.0f;
-	
-	private float cooldown = 2;
-	public int Number { get; set; } = 3;
+
 
 	public override void _Process(double delta)
     {

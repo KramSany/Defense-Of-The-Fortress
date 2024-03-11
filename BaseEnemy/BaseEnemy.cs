@@ -1,16 +1,19 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 public partial class BaseEnemy : Node2D
 {
+	private List<Type> validNodeTypes = new List<Type> { typeof(AxeUnit), typeof(SwordUnit) };
 	Timer timer = new Timer();
 	ProgressBar progressBar = new ProgressBar();
 
 	public float HealthBaseEnemy = 100;
 	public float Damage = 40.0f;
-	SwordUnit sword = new();
+	
 	bool death = false;
+	private BaseUnit unitInAreaBase;
 	
 	public override void _Ready()
 	{
@@ -25,22 +28,24 @@ public partial class BaseEnemy : Node2D
 
 	private void _on_detected_unit_body_entered(Node2D node) // Entered area for player units
 	{
-		if (node is CharacterBody2D)
+		if (node is BaseUnit)
 		{
-			if (node is SwordUnit)
-			{
-				sword = (SwordUnit)node;
-				timer.Start();
-			}
+			unitInAreaBase = (BaseUnit)node;
+			timer.Start();
 		}
+	}
 
+	private void _on_detected_unit_body_exited(Node2D node)
+	{
+		timer.Stop();
 	}
 
 	private void _on_timer_timeout() // Timer??
 	{
-		progressBar.Value-= sword.DamageUnit;
-		HealthBaseEnemy -= sword.DamageUnit;
-		sword.TakeDamage(Damage);
+		// progressBar.Value-= sword.DamageUnit;
+		// HealthBaseEnemy -= sword.DamageUnit;
+		unitInAreaBase.TakeDamage(40);
+		
 		
 	}
 
@@ -51,7 +56,5 @@ public partial class BaseEnemy : Node2D
 			Debug.Print("penis");
 			GetTree().ChangeSceneToFile("res://leveldesign.tscn");
 		}
-		
-
 	}
 }
