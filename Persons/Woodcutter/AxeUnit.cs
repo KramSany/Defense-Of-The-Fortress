@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 public partial class AxeUnit : CharacterBody2D
 {
+<<<<<<< Updated upstream
     private AnimatedSprite2D _animatedSprite;
     public float HelathPoint = 100.0f;
     // Скорость движения юнита
@@ -18,6 +19,14 @@ public partial class AxeUnit : CharacterBody2D
     public override void _Ready()
     {
         _animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+=======
+    public float damagePerSecond = 15.0f;
+    public float helath = 100.0f;
+    public AxeUnit()
+    {
+        Health = helath;
+        DamagePerSecnod = damagePerSecond;
+>>>>>>> Stashed changes
     }
 	private void ApplyGravity()
     {

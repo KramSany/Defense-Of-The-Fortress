@@ -1436,8 +1436,6 @@ text = "Sword Man
 
 [node name="Base" parent="." instance=ExtResource("8_dj5gg")]
 position = Vector2(131, 525)
-helathPointBase = 40.0
-money = 400.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(209, 479)

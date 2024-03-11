@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 public partial class SwordUnit : CharacterBody2D
 {
+<<<<<<< Updated upstream
     private AnimatedSprite2D _animatedSprite;
     public float HelathPoint = 100.0f;
     public float DamageUnit = 5;
@@ -17,6 +18,14 @@ public partial class SwordUnit : CharacterBody2D
     {
         if (HelathPoint <= 0) QueueFree();
         
+=======
+    public float damagePerSecond = 15.0f;
+    public float helath = 100.0f;
+    public SwordUnit()
+    {
+        Health = helath; // Устанавливаем начальное значение HP для SwordUnit
+        DamagePerSecnod = damagePerSecond;
+>>>>>>> Stashed changes
     }
 
     public override void _Ready()

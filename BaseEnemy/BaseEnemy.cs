@@ -34,13 +34,27 @@ public partial class BaseEnemy : Node2D
 			}
 		}
 
+<<<<<<< Updated upstream
+=======
+	private void _on_detected_unit_body_exited(Node2D node)
+	{
+		timer.Stop();
+		unitInAreaBase = null;
+>>>>>>> Stashed changes
 	}
 
 	private void _on_timer_timeout() // Timer??
 	{
+<<<<<<< Updated upstream
 		progressBar.Value-= sword.DamageUnit;
 		HealthBaseEnemy -= sword.DamageUnit;
 		sword.TakeDamage(Damage);
+=======
+		progressBar.Value-= unitInAreaBase.DamagePerSecnod;
+		HealthBaseEnemy -= unitInAreaBase.DamagePerSecnod;
+		unitInAreaBase.TakeDamage(Damage);
+		
+>>>>>>> Stashed changes
 		
 	}
 
