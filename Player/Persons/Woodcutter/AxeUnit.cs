@@ -9,7 +9,7 @@ public partial class AxeUnit : BaseUnit
 {
     Timer timer = new Timer();
     public float damagePerSecond = 25.0f;
-    public float helath = 100.0f;
+    public float helath = 50.0f;
     public AxeUnit()
     {
         Health = helath;

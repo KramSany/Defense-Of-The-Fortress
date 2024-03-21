@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://uhkdst5dwarn" path="res://Player/BasePlayer/BasePlayer.tscn" id="8_dj5gg"]
 [ext_resource type="Script" path="res://ControllerCamera.cs" id="9_r6hi1"]
 [ext_resource type="PackedScene" uid="uid://bw0pddfv6c64i" path="res://Enemy/BaseEnemy/base_enemy.tscn" id="9_yahys"]
-[ext_resource type="PackedScene" uid="uid://c2b7flo0ngql5" path="res://Enemy/EnemyUnits/enemy_axe_player.tscn" id="10_e1tgs"]
+[ext_resource type="PackedScene" uid="uid://c2b7flo0ngql5" path="res://Enemy/EnemyUnits/enemy_axe_player.tscn" id="10_cdxbl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_onwcy"]
 texture = ExtResource("4_y2o8a")
@@ -1458,8 +1458,8 @@ value = 100.0
 
 [node name="Timer" type="Timer" parent="BaseEnemy"]
 
-[node name="EnemyAxePlayer" parent="." instance=ExtResource("10_e1tgs")]
-position = Vector2(367, 559)
+[node name="EnemyAxePlayer" parent="." instance=ExtResource("10_cdxbl")]
+position = Vector2(358, 560)
 
 [connection signal="pressed" from="CanvasLayer/Add axe man" to="Base" method="AddAxeUnitBtn"]
 [connection signal="pressed" from="CanvasLayer/Button2" to="Base" method="AddSwordUnitBtn"]

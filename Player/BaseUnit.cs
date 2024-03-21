@@ -11,15 +11,16 @@ public partial class BaseUnit : CharacterBody2D
     System.Timers.Timer timer = new(1000);
      protected AnimatedSprite2D _animatedSprite;
      public float Health { get; set; }
-     public static float DamagePerSecnod {get; set; }
+     public float DamagePerSecnod {get; set; }
     protected float MoveSpeed = 40.0f;
     protected Vector2 gravity = new Vector2(0, 800.0f);
     private static EnemyBaseUnit enemyBaseUnit;
+    private static BaseEnemy baseEnemy;
 
 
 
     protected bool isEnemy = false;
-    private bool unitIsDead = false;
+    public bool unitIsDead = false;
 
     public override void _Ready()
     {
@@ -37,6 +38,7 @@ public partial class BaseUnit : CharacterBody2D
 
     public override void _Process(double delta)
     {
+        GD.Print($"{Health}");
         ApplyGravity();
 
         if (MoveSpeed <= 0 && !isEnemy && !unitIsDead)
@@ -64,42 +66,72 @@ public partial class BaseUnit : CharacterBody2D
 
     internal async void TakeDamage(float damage)
     {
-        if (Health >= 0)
+        if (Health > 0)
         {
             Health -= damage;
             GD.Print("Get damage");
-
         }
         else 
         {
-            _animatedSprite.Stop();
-            _animatedSprite.Play("Death");
-            await Task.Delay(900); // delay for animation "death" playing until end. Without this delay animation is not ended because method QueueFree() will clear object
-            QueueFree();
-            
-        }
+            if (_animatedSprite != null && !unitIsDead) 
+            {
+                unitIsDead = true; 
+                
+                _animatedSprite?.Stop();
+                _animatedSprite?.Play("Death");
+                await Task.Delay(1000);
+                QueueFree();
+            }
+                        
+        }  
         
     }
-
-    
-
 
     // Общая логика для обработки входа в область
     public virtual void OnAreaEntered(Node2D node)
     {
-        if (node is BaseUnit)
-        {
-            MoveSpeed = 0.0f;
-        }
-        else if (node is EnemyBaseUnit)
-        {
-            enemyBaseUnit = (EnemyBaseUnit)node;
-            isEnemy = true;
-            MoveSpeed = 0.0f;
-            _animatedSprite.Play("Attack");
-            timer.Start();
+        if (node is EnemyBaseUnit unit)
+    {
+        enemyBaseUnit = unit;
+        isEnemy = true;
+        MoveSpeed = 0.0f;
+        _animatedSprite.Play("Attack");
+        timer.Start();
+    }
+    else if (node is BaseUnit)
+    {
+        // Handle the case when a non-enemy BaseUnit is encountered
+        MoveSpeed = 0.0f;
+    }
+    else
+    {
+        // Handle other cases (e.g., Node2D instances that are not EnemyBaseUnit or BaseUnit)
+        GD.Print($"Entered base area");
+        isEnemy = true;
+        MoveSpeed = 0.0f;
+        _animatedSprite.Play("Attack");
+    }
+
+        // GD.Print($"{node}");
+        // if (node is BaseEnemy)
+        // {
+        //     GD.Print("this is enemy");
+        //     MoveSpeed = 0.0f;
+        // }
+        // else if (node is EnemyBaseUnit unit)
+        // {
+        //     GD.Print("this is enemy");
+        //     enemyBaseUnit = unit;
+        //     isEnemy = true;
+        //     MoveSpeed = 0.0f;
+        //     _animatedSprite.Play("Attack");
+        //     timer.Start();
             
-        }
+        // }
+        // else if (node is BaseEnemy)
+        // {
+        //     GD.Print("this is enemy base");
+        // }
     }
 
     // Общая логика для обработки выхода из области
@@ -111,13 +143,12 @@ public partial class BaseUnit : CharacterBody2D
     
     public static void GetDamage (EnemyBaseUnit obj)
     {
-        enemyBaseUnit.TakeDamage(DamagePerSecnod);
-        GD.Print("ge");
+        // obj.TakeDamage(DamagePerSecnod);
 
     }
-    private static void OnTimedEvent(Object source, ElapsedEventArgs e)
+    private void OnTimedEvent(Object source, ElapsedEventArgs e)
     {
-        GetDamage(enemyBaseUnit);
+        enemyBaseUnit.TakeDamage(DamagePerSecnod);
         
     }
     

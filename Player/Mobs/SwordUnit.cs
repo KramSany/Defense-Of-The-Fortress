@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 public partial class SwordUnit : BaseUnit
 {
-    public float damagePerSecond = 15.0f;
+    public float damagePerSecond = 10.0f;
     public float helath = 10.0f;
     public SwordUnit()
     {
