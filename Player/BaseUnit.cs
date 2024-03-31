@@ -16,6 +16,7 @@ public partial class BaseUnit : CharacterBody2D
     protected Vector2 gravity = new Vector2(0, 800.0f);
     private static EnemyBaseUnit enemyBaseUnit;
     private static BaseEnemy baseEnemy;
+    private ProgressBar healthBar;
 
 
 
@@ -24,9 +25,11 @@ public partial class BaseUnit : CharacterBody2D
 
     public override void _Ready()
     {
+        
+        healthBar = GetNode<ProgressBar>("ProgressBar");
+        healthBar.MaxValue = Health;
         timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
         _animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
-        
     }
 
     protected void ApplyGravity()
@@ -38,7 +41,7 @@ public partial class BaseUnit : CharacterBody2D
 
     public override void _Process(double delta)
     {
-        GD.Print($"{Health}");
+        
         ApplyGravity();
 
         if (MoveSpeed <= 0 && !isEnemy && !unitIsDead)
@@ -49,7 +52,7 @@ public partial class BaseUnit : CharacterBody2D
         {
             _animatedSprite.Play("Walk");
         }
-
+        healthBar.Value = Health;
         MoveAndSlide();
         MoveRight();
     }
@@ -64,28 +67,7 @@ public partial class BaseUnit : CharacterBody2D
         }
     }
 
-    internal async void TakeDamage(float damage)
-    {
-        if (Health > 0)
-        {
-            Health -= damage;
-            GD.Print("Get damage");
-        }
-        else 
-        {
-            if (_animatedSprite != null && !unitIsDead) 
-            {
-                unitIsDead = true; 
-                
-                _animatedSprite?.Stop();
-                _animatedSprite?.Play("Death");
-                await Task.Delay(1000);
-                QueueFree();
-            }
-                        
-        }  
-        
-    }
+    
 
     // Общая логика для обработки входа в область
     public virtual void OnAreaEntered(Node2D node)
@@ -148,10 +130,39 @@ public partial class BaseUnit : CharacterBody2D
     }
     private void OnTimedEvent(Object source, ElapsedEventArgs e)
     {
-        enemyBaseUnit.TakeDamage(DamagePerSecnod);
+        if (enemyBaseUnit.unitIsDead == false)
+        {
+            enemyBaseUnit.TakeDamage(DamagePerSecnod);
+        }
         
+        
+        
+    }
+    internal void TakeDamage(float damage)
+    {
+        Health -= damage;
+        
+        if (Health <= 0)
+        {
+            Death();
+        }
+        
+    }
+
+    internal async void Death()
+    {
+        if (_animatedSprite != null && !unitIsDead) 
+            {
+                unitIsDead = true; 
+                _animatedSprite?.Stop();
+                _animatedSprite?.Play("Death");
+                await Task.Delay(800);
+                QueueFree();
+            }
     }
     
 
 }
 
+// Сделать хп бар для юнитов врага. Добавить новых юнитов
+//                 !!!СУПЕР ВАЖНО!!!

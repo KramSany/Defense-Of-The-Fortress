@@ -4,8 +4,9 @@ using System.Diagnostics;
 
 public partial class SwordUnit : BaseUnit
 {
+    Timer timer = new Timer();
     public float damagePerSecond = 10.0f;
-    public float helath = 10.0f;
+    public float helath = 99.0f;
     public SwordUnit()
     {
         Health = helath;

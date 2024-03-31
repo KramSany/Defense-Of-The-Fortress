@@ -1436,7 +1436,7 @@ text = "Sword Man
 250"
 
 [node name="Base" parent="." instance=ExtResource("8_dj5gg")]
-position = Vector2(131, 525)
+position = Vector2(95, 525)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(209, 479)

@@ -4,48 +4,61 @@ using System.Diagnostics;
 
 public partial class BasePlayer : Node2D
 {
-	private string axeUnit = "res://Player/Persons/Woodcutter/AxeMan.tscn";
-	private string swordUnit = "res://Player/Mobs/SwordPerson.tscn";
+    private string axeUnit = "res://Player/Persons/Woodcutter/AxeMan.tscn";
+    private string swordUnit = "res://Player/Mobs/SwordPerson.tscn";
 
-	private float helathPointBase = 100.0f;
+    private float helathPointBase = 100.0f;
+    private float money = 10000.0f;
 
-	private float money = 10000.0f;
+    private float costAxeUnit = 100.0f;
+    private float costSwordUnit = 250.0f;
 
-	private float costAxeUnit = 100.0f;
+    private bool axeButtonPressed = false;
+    private bool swordButtonPressed = false;
 
-	private float costSwordUnit = 250.0f;
+    private float spawnDelay = 2.0f; // Задержка между спаунами в секундах
+    private float spawnTimer = 0.0f;
 
-
-	public override void _Process(double delta)
+    public override void _Process(double delta)
     {
-		UIElementsPlayer.GetHealthBase(helathPointBase);
-		UIElementsPlayer.GetMoneyBase(money);
+        UIElementsPlayer.GetHealthBase(helathPointBase);
+        UIElementsPlayer.GetMoneyBase(money);
+
+        // Уменьшаем время таймера каждый кадр
+        spawnTimer -= (float)delta;
+
+        // Если таймер меньше или равен нулю, кнопки можно активировать снова
+        if (spawnTimer <= 0.0f)
+        {
+            axeButtonPressed = false;
+            swordButtonPressed = false;
+        }
     }
 
+    private void SpawnUnit(string unitScenePath, ref bool buttonPressed, float unitCost)
+    {
+        if (money >= unitCost && !buttonPressed)
+        {
+            money -= unitCost;
+            BaseUnit mob = (BaseUnit)GD.Load<PackedScene>(unitScenePath).Instantiate();
+            AddChild(mob);
+            mob.Position = new Vector2(-30, 40);
 
+            // Запускаем таймер после спауна юнита
+            spawnTimer = spawnDelay;
 
-	private void AddAxeUnitBtn() // Add Axe unit
-	{
-		if (money >= costAxeUnit)
-		{
-			money -= costAxeUnit;
-			AxeUnit mob = (AxeUnit)GD.Load<PackedScene>(axeUnit).Instantiate();
-			AddChild(mob);
-			mob.Position = new Vector2(40,40);
-		}
-		
-	} 
+            // Устанавливаем флаг, чтобы не разрешать спаун до завершения таймера
+            buttonPressed = true;
+        }
+    }
 
-	private void AddSwordUnitBtn() // Add Sword unit
-	{
-		if (money >= costSwordUnit)
-		{
-			money -= costSwordUnit;
-			SwordUnit mob = (SwordUnit)GD.Load<PackedScene>(swordUnit).Instantiate();
-			AddChild(mob);
-			mob.Position = new Vector2(40,40);
-		}
-	}
+    private void AddAxeUnitBtn() // Add Axe unit
+    {
+        SpawnUnit(axeUnit, ref axeButtonPressed, costAxeUnit);
+    }
 
-	// I will add more units in the future
+    private void AddSwordUnitBtn() // Add Sword unit
+    {
+        SpawnUnit(swordUnit, ref swordButtonPressed, costSwordUnit);
+    }
 }
