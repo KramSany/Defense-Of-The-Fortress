@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bw0pddfv6c64i"]
+
+[ext_resource type="Script" path="res://Enemy/BaseEnemy/BaseEnemy.cs" id="1_xrmh0"]
+[ext_resource type="Texture2D" uid="uid://covxebfg0uraw" path="res://Enemy/BaseEnemy/house.png" id="2_5rlkw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6llwv"]
+size = Vector2(242, 289)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pa8xp"]
+size = Vector2(13.25, 47.25)
+
+[node name="BaseEnemy" type="Node2D"]
+script = ExtResource("1_xrmh0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_5rlkw")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(14, -9.5)
+shape = SubResource("RectangleShape2D_6llwv")
+
+[node name="DetectedUnit" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectedUnit"]
+position = Vector2(-114.375, 110.625)
+shape = SubResource("RectangleShape2D_pa8xp")
+
+[connection signal="body_entered" from="DetectedUnit" to="." method="_on_detected_unit_body_entered"]
+[connection signal="body_exited" from="DetectedUnit" to="." method="_on_detected_unit_body_exited"]
