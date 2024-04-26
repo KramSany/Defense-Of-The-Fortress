@@ -22,8 +22,10 @@ position = Vector2(14, -9.5)
 shape = SubResource("RectangleShape2D_6llwv")
 
 [node name="DetectedUnit" type="Area2D" parent="."]
+z_index = -1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectedUnit"]
+z_index = 1
 position = Vector2(-114.375, 110.625)
 shape = SubResource("RectangleShape2D_pa8xp")
 

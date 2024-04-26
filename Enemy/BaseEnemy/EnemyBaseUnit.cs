@@ -19,9 +19,12 @@ public partial class EnemyBaseUnit : CharacterBody2D
     protected bool isEnemy = false;
     public bool unitIsDead = false;
     private bool inBasePlayer = false;
+    private ProgressBar healthBar;
 
     public override void _Ready()
     {
+        healthBar = GetNode<ProgressBar>("ProgressBar");
+        healthBar.MaxValue = Health;
         timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
         _animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
     }
@@ -45,6 +48,7 @@ public partial class EnemyBaseUnit : CharacterBody2D
         {
             _animatedSprite.Play("Walk");
         }
+        healthBar.Value = Health;
 
         MoveAndSlide();
         MoveRight();
@@ -128,6 +132,11 @@ public partial class EnemyBaseUnit : CharacterBody2D
         if (area.Name == "AreaPlayer")
         {
             
+        }
+        
+        else if (area.Name == "DetectedUnit")
+        {
+            GD.Print("моя база");
         }
         else
         {

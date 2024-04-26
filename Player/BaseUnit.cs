@@ -92,6 +92,7 @@ public partial class BaseUnit : CharacterBody2D
         isEnemy = true;
         MoveSpeed = 0.0f;
         _animatedSprite.Play("Attack");
+        GD.Print("Я атакую базу");
     }
 
         // GD.Print($"{node}");

@@ -186,7 +186,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w0yxe"]
-size = Vector2(4, 5)
+size = Vector2(5, 5)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2pcwi"]
 bg_color = Color(0.815686, 0.223529, 0.243137, 1)
@@ -203,6 +203,7 @@ corner_radius_bottom_right = 12
 corner_radius_bottom_left = 12
 
 [node name="AxeMan" type="CharacterBody2D"]
+collision_mask = 3
 script = ExtResource("1_elyhq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -216,7 +217,7 @@ animation = &"Idle"
 [node name="AreaPlayer" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaPlayer"]
-position = Vector2(13, 0)
+position = Vector2(13.5, 0)
 shape = SubResource("RectangleShape2D_w0yxe")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://vrr1og36hhhc"]
+[gd_scene load_steps=14 format=3 uid="uid://vrr1og36hhhc"]
 
 [ext_resource type="Texture2D" uid="uid://ds3s5ht5p02bw" path="res://background/background_layer_1.png" id="1_6pf6w"]
 [ext_resource type="Texture2D" uid="uid://dhewmcwaesm8o" path="res://background/background_layer_2.png" id="2_itc5r"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://ControllerCamera.cs" id="9_r6hi1"]
 [ext_resource type="PackedScene" uid="uid://bw0pddfv6c64i" path="res://Enemy/BaseEnemy/base_enemy.tscn" id="9_yahys"]
 [ext_resource type="PackedScene" uid="uid://c2b7flo0ngql5" path="res://Enemy/EnemyUnits/enemy_axe_player.tscn" id="10_cdxbl"]
+[ext_resource type="PackedScene" uid="uid://dv4857mlnxx0h" path="res://Player/Persons/Woodcutter/AxeMan.tscn" id="11_sqt7p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_onwcy"]
 texture = ExtResource("4_y2o8a")
@@ -1447,7 +1448,7 @@ script = ExtResource("9_r6hi1")
 
 [node name="BaseEnemy" parent="." instance=ExtResource("9_yahys")]
 z_index = -1
-position = Vector2(506, 440)
+position = Vector2(507, 440)
 
 [node name="ProgressBar" type="ProgressBar" parent="BaseEnemy"]
 offset_left = -98.0
@@ -1459,7 +1460,11 @@ value = 100.0
 [node name="Timer" type="Timer" parent="BaseEnemy"]
 
 [node name="EnemyAxePlayer" parent="." instance=ExtResource("10_cdxbl")]
-position = Vector2(358, 560)
+position = Vector2(673, 556)
+
+[node name="AxeMan" parent="." instance=ExtResource("11_sqt7p")]
+position = Vector2(175, 556)
+collision_mask = 1
 
 [connection signal="pressed" from="CanvasLayer/Add axe man" to="Base" method="AddAxeUnitBtn"]
 [connection signal="pressed" from="CanvasLayer/Button2" to="Base" method="AddSwordUnitBtn"]
