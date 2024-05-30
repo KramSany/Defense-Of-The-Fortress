@@ -1,8 +1,5 @@
 using Godot;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Timers;
 
@@ -11,21 +8,20 @@ public partial class BaseUnit : CharacterBody2D
     System.Timers.Timer timer = new(1000);
      protected AnimatedSprite2D _animatedSprite;
      public float Health { get; set; }
-     public float DamagePerSecnod {get; set; }
+     public float DamagePerSecond {get; set; }
     protected float MoveSpeed = 40.0f;
     protected Vector2 gravity = new Vector2(0, 800.0f);
     private static EnemyBaseUnit enemyBaseUnit;
-    private static BaseEnemy baseEnemy;
     private ProgressBar healthBar;
 
 
 
     protected bool isEnemy = false;
     public bool unitIsDead = false;
+    private bool unitInBase = false;
 
     public override void _Ready()
     {
-        
         healthBar = GetNode<ProgressBar>("ProgressBar");
         healthBar.MaxValue = Health;
         timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
@@ -41,14 +37,13 @@ public partial class BaseUnit : CharacterBody2D
 
     public override void _Process(double delta)
     {
-        
         ApplyGravity();
 
-        if (MoveSpeed <= 0 && !isEnemy && !unitIsDead)
+        if (MoveSpeed <= 0 && !isEnemy && !unitIsDead && !unitInBase)
         {
             _animatedSprite.Play("Idle");
         }
-        else if (MoveSpeed > 0)
+        else if (MoveSpeed > 0 && !unitInBase)
         {
             _animatedSprite.Play("Walk");
         }
@@ -59,7 +54,7 @@ public partial class BaseUnit : CharacterBody2D
 
     protected void MoveRight()
     {
-        if (MoveSpeed != 0.0f)
+        if (MoveSpeed != 0.0f && !unitInBase)
         {
             Vector2 currentPosition = Position;
             Vector2 newPosition = currentPosition + new Vector2(MoveSpeed * (float)GetProcessDeltaTime(), 0);
@@ -67,11 +62,28 @@ public partial class BaseUnit : CharacterBody2D
         }
     }
 
-    
+    public virtual void OnAreaPlayerEnyered(Area2D area2D)
+    {
+        if (area2D.Name == "AreaEnemyBase")
+        {
+            GD.Print($"Entered base area");
+            isEnemy = true;
+            unitInBase = true;
+            MoveSpeed = 0.0f;
+            _animatedSprite.Play("Attack");
+        }
+    }
 
     // Общая логика для обработки входа в область
     public virtual void OnAreaEntered(Node2D node)
     {
+
+        if (node.Name == "EnemyBase")
+        {
+            GD.Print("Я атакую базу");
+        }
+
+
         if (node is EnemyBaseUnit unit)
     {
         enemyBaseUnit = unit;
@@ -85,15 +97,7 @@ public partial class BaseUnit : CharacterBody2D
         // Handle the case when a non-enemy BaseUnit is encountered
         MoveSpeed = 0.0f;
     }
-    else
-    {
-        // Handle other cases (e.g., Node2D instances that are not EnemyBaseUnit or BaseUnit)
-        GD.Print($"Entered base area");
-        isEnemy = true;
-        MoveSpeed = 0.0f;
-        _animatedSprite.Play("Attack");
-        GD.Print("Я атакую базу");
-    }
+    //     GD.Print("Я атакую базу");
 
         // GD.Print($"{node}");
         // if (node is BaseEnemy)
@@ -109,7 +113,6 @@ public partial class BaseUnit : CharacterBody2D
         //     MoveSpeed = 0.0f;
         //     _animatedSprite.Play("Attack");
         //     timer.Start();
-            
         // }
         // else if (node is BaseEnemy)
         // {
@@ -123,7 +126,6 @@ public partial class BaseUnit : CharacterBody2D
         MoveSpeed = 40.0f;
         timer.Stop();
     }
-    
     public static void GetDamage (EnemyBaseUnit obj)
     {
         // obj.TakeDamage(DamagePerSecnod);
@@ -133,21 +135,16 @@ public partial class BaseUnit : CharacterBody2D
     {
         if (enemyBaseUnit.unitIsDead == false)
         {
-            enemyBaseUnit.TakeDamage(DamagePerSecnod);
+            enemyBaseUnit.TakeDamage(DamagePerSecond);
         }
-        
-        
-        
     }
     internal void TakeDamage(float damage)
     {
         Health -= damage;
-        
         if (Health <= 0)
         {
             Death();
         }
-        
     }
 
     internal async void Death()

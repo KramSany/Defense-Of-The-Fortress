@@ -19,6 +19,9 @@ public partial class BasePlayer : Node2D
     private float spawnDelay = 2.0f; // Задержка между спаунами в секундах
     private float spawnTimer = 0.0f;
 
+    private Node upgradeMenuContainer;
+
+
     public override void _Process(double delta)
     {
         UIElementsPlayer.GetHealthBase(helathPointBase);
@@ -33,6 +36,12 @@ public partial class BasePlayer : Node2D
             axeButtonPressed = false;
             swordButtonPressed = false;
         }
+    }
+
+    public override void _Ready()
+    {
+        upgradeMenuContainer = GetNode<Node>("Map/CanvasLayer");
+        if (upgradeMenuContainer == null) GD.Print("Меню контейнера нет");
     }
 
     private void SpawnUnit(string unitScenePath, ref bool buttonPressed, float unitCost)
@@ -60,5 +69,11 @@ public partial class BasePlayer : Node2D
     private void AddSwordUnitBtn() // Add Sword unit
     {
         SpawnUnit(swordUnit, ref swordButtonPressed, costSwordUnit);
+    }
+
+    private void OpenUpgradeMenu()
+    {
+        Node upgradeMenuInstance = ResourceLoader.Load<PackedScene>("res://UpgradeMenu.tscn").Instantiate();
+        upgradeMenuContainer.AddChild(upgradeMenuInstance);
     }
 }

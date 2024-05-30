@@ -231,5 +231,6 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_vdfye")
 value = 100.0
 show_percentage = false
 
+[connection signal="area_entered" from="AreaPlayer" to="." method="_on_area_player_area_entered"]
 [connection signal="body_entered" from="AreaPlayer" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="AreaPlayer" to="." method="_on_area_2d_body_exited"]

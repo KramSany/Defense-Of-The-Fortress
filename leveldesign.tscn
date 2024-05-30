@@ -1,7 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://kt82f8jaxkx0"]
+[gd_scene load_steps=5 format=3 uid="uid://kt82f8jaxkx0"]
 
 [ext_resource type="Script" path="res://leveldesign.cs" id="1_oygwl"]
 [ext_resource type="PackedScene" uid="uid://dn354ux6b8c7w" path="res://bg.tscn" id="2_famfb"]
+[ext_resource type="AudioStream" uid="uid://djiwv52xa3a0g" path="res://Music/MainSound.mp3" id="3_na2pv"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_tkves"]
+script/source = "using Godot;
+using System;
+
+public partial class MusicPlayer : AudioStreamPlayer2D
+{
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready()
+	{
+	}
+
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
+	{
+	}
+}
+"
 
 [node name="Menu" type="Node2D"]
 script = ExtResource("1_oygwl")
@@ -15,7 +34,16 @@ theme_override_font_sizes/font_size = 30
 text = "Play"
 icon_alignment = 1
 
-[node name="Play2" type="Button" parent="."]
+[node name="Settings" type="Button" parent="."]
+offset_left = 482.0
+offset_top = 230.0
+offset_right = 740.0
+offset_bottom = 314.0
+theme_override_font_sizes/font_size = 30
+text = "Settings"
+icon_alignment = 1
+
+[node name="Quit" type="Button" parent="."]
 offset_left = 481.0
 offset_top = 328.0
 offset_right = 739.0
@@ -25,5 +53,12 @@ text = "Quit"
 
 [node name="BG" parent="." instance=ExtResource("2_famfb")]
 
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_na2pv")
+volume_db = 1.0
+autoplay = true
+script = SubResource("CSharpScript_tkves")
+
 [connection signal="pressed" from="Play" to="." method="SwitchToLevel"]
-[connection signal="pressed" from="Play2" to="." method="_on_play_2_pressed"]
+[connection signal="pressed" from="Settings" to="." method="SwitchToSettingsMenu"]
+[connection signal="pressed" from="Quit" to="." method="_on_play_2_pressed"]

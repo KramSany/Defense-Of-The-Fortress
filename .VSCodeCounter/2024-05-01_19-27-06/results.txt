@@ -1,0 +1,143 @@
+Date : 2024-05-01 19:27:06
+Directory : d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress
+Total : 96 files,  4872 codes, 69 comments, 830 blanks, all 5771 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| GDScene    |          9 |      2,163 |          0 |        176 |      2,339 |
+| GDResource |         66 |      1,900 |          7 |        400 |      2,307 |
+| C#         |         15 |        648 |         52 |        178 |        878 |
+| GDScript   |          3 |        147 |         10 |         73 |        230 |
+| XML        |          2 |          8 |          0 |          1 |          9 |
+| Properties |          1 |          6 |          0 |          2 |          8 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                    |         96 |      4,872 |         69 |        830 |      5,771 |
+| . (Files)                                                                                                            |         15 |      1,802 |         15 |        139 |      1,956 |
+| Enemy                                                                                                                |          6 |        459 |         10 |        107 |        576 |
+| Enemy\BaseEnemy                                                                                                      |          4 |        230 |         10 |         63 |        303 |
+| Enemy\EnemyUnits                                                                                                     |          2 |        229 |          0 |         44 |        273 |
+| Player                                                                                                               |         49 |      1,820 |         34 |        377 |      2,231 |
+| Player (Files)                                                                                                       |          3 |        144 |         30 |         35 |        209 |
+| Player\BasePlayer                                                                                                    |          2 |         61 |          4 |         22 |         87 |
+| Player\Mobs                                                                                                          |          2 |        225 |          0 |         39 |        264 |
+| Player\Persons                                                                                                       |         42 |      1,390 |          0 |        281 |      1,671 |
+| Player\Persons (Files)                                                                                               |          1 |         29 |          0 |          6 |         35 |
+| Player\Persons\GraveRobber                                                                                           |         13 |        377 |          0 |         78 |        455 |
+| Player\Persons\SteamMan                                                                                              |         13 |        377 |          0 |         78 |        455 |
+| Player\Persons\Woodcutter                                                                                            |         15 |        607 |          0 |        119 |        726 |
+| Skeleton                                                                                                             |          6 |        174 |          0 |         36 |        210 |
+| addons                                                                                                               |          4 |        153 |         10 |         75 |        238 |
+| addons\AS2P                                                                                                          |          4 |        153 |         10 |         75 |        238 |
+| background                                                                                                           |          3 |         87 |          0 |         18 |        105 |
+| decorations                                                                                                          |         13 |        377 |          0 |         78 |        455 |
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                             | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\BgMove.cs                                                 | C#         |         13 |          2 |          5 |         20 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\ControllerCamera.cs                                       | C#         |         52 |          0 |         12 |         64 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Diplom17.11.2023.csproj                                   | XML        |          7 |          0 |          0 |          7 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\EnemyBaseNew.cs                                           | C#         |         78 |          6 |         29 |        113 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\EnemyBaseNew.tscn                                         | GDScene    |         33 |          0 |         11 |         44 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\BaseEnemy.cs                              | C#         |         49 |          0 |         12 |         61 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\EnemyBaseUnit.cs                          | C#         |        129 |         10 |         34 |        173 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\base_enemy.tscn                           | GDScene    |         23 |          0 |         11 |         34 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\house.png.import                          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\EnemyUnits\EnemyAxePlayer.cs                        | C#         |         26 |          0 |          8 |         34 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\EnemyUnits\enemy_axe_player.tscn                    | GDScene    |        203 |          0 |         36 |        239 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\BasePlayer\BasePlayer.cs                           | C#         |         47 |          4 |         14 |         65 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\BasePlayer\BasePlayer.tscn                         | GDScene    |         14 |          0 |          8 |         22 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\BaseUnit.cs                                        | C#         |        120 |         26 |         29 |        175 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\LabelHP.cs                                         | C#         |         12 |          2 |          3 |         17 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Mobs\SwordPerson.tscn                              | GDScene    |        203 |          0 |         36 |        239 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Mobs\SwordUnit.cs                                  | C#         |         22 |          0 |          3 |         25 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\MoneyBase.cs                                       | C#         |         12 |          2 |          3 |         17 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_attack1.png.import | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_attack2.png.import | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_attack3.png.import | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_climb.png.import   | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_craft.png.import   | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_death.png.import   | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_hurt.png.import    | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_idle.png.import    | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_jump.png.import    | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_push.png.import    | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_run.png.import     | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_walk.png.import    | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan.png.import               | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_attack1.png.import       | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_attack2.png.import       | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_attack3.png.import       | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_climb.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_craft.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_death.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_hurt.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_idle.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_jump.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_push.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_run.png.import           | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_walk.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\AxeMan.tscn                     | GDScene    |        201 |          0 |         36 |        237 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\AxeUnit.cs                      | C#         |         29 |          0 |          5 |         34 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter.png.import           | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_attack1.png.import   | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_attack2.png.import   | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_attack3.png.import   | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_climb.png.import     | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_craft.png.import     | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_death.png.import     | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_hurt.png.import      | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_idle.png.import      | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_jump.png.import      | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_push.png.import      | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_run.png.import       | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_walk.png.import      | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\char_blue.png.import                       | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Attack.png.import                                | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Death.png.import                                 | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Idle.png.import                                  | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Shield.png.import                                | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Take Hit.png.import                              | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Walk.png.import                                  | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\UIElements.cs                                             | C#         |         29 |          0 |         11 |         40 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\UnitType.cs                                               | C#         |          9 |          0 |          1 |         10 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\addons\AS2P\InspectorConvertor.gd                         | GDScript   |         56 |          3 |         26 |         85 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\addons\AS2P\NodeSelectorProperty.gd                       | GDScript   |         75 |          5 |         39 |        119 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\addons\AS2P\plugin.cfg                                    | Properties |          6 |          0 |          2 |          8 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\addons\AS2P\plugin.gd                                     | GDScript   |         16 |          2 |          8 |         26 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\background\background_layer_1.png.import                  | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\background\background_layer_2.png.import                  | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\background\background_layer_3.png.import                  | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\bg.tscn                                                   | GDScene    |         28 |          0 |          9 |         37 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\fence_1.png.import                            | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\fence_2.png.import                            | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\grass_1.png.import                            | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\grass_2.png.import                            | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\grass_3.png.import                            | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\lamp.png.import                               | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\oak_woods_tileset.png.import                  | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\rock_1.png.import                             | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\rock_2.png.import                             | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\rock_3.png.import                             | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\shop.png.import                               | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\shop_anim.png.import                          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\sign.png.import                               | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\house1.png.import                                         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\icon.svg                                                  | XML        |          1 |          0 |          1 |          2 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\icon.svg.import                                           | GDResource |         32 |          0 |          6 |         38 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\level.tscn                                                | GDScene    |      1,435 |          0 |         22 |      1,457 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\leveldesign.cs                                            | C#         |         21 |          0 |          9 |         30 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\leveldesign.tscn                                          | GDScene    |         23 |          0 |          7 |         30 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\project.godot                                             | GDResource |         12 |          7 |         10 |         29 |
+| Total                                                                                                                |            |      4,872 |         69 |        830 |      5,771 |
++----------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

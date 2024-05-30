@@ -28,6 +28,5 @@ public partial class EnemyAxePlayer : EnemyBaseUnit
         OnAreaToAreaExited(area);
     }
 
-    
 
 }

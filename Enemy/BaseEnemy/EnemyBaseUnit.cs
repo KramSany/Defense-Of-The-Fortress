@@ -8,18 +8,19 @@ using System.Timers;
 
 public partial class EnemyBaseUnit : CharacterBody2D
 {
+    public EnemyBaseNew enemyBaseNewInstance = new EnemyBaseNew();
     System.Timers.Timer timer = new(1000);
     private BaseUnit playerUnit;
-     protected AnimatedSprite2D _animatedSprite;
-     public float Health { get; set; }
-     public float DamagePerSecnod {get; set; }
+    protected AnimatedSprite2D _animatedSprite;
+    public float Health { get; set; }
+    public float DamagePerSecnod {get; set; }
     protected float MoveSpeed = 40.0f;
     protected Vector2 gravity = new Vector2(0, 800.0f);
 
     protected bool isEnemy = false;
     public bool unitIsDead = false;
     private bool inBasePlayer = false;
-    private ProgressBar healthBar;
+        private ProgressBar healthBar;
 
     public override void _Ready()
     {
@@ -67,7 +68,6 @@ public partial class EnemyBaseUnit : CharacterBody2D
     internal void TakeDamage(float damage)
     {
         Health -= damage;
-        
         if (Health <= 0)
         {
             Death();
@@ -77,6 +77,7 @@ public partial class EnemyBaseUnit : CharacterBody2D
 
     internal async void Death()
     {
+        HelperUnitCount.CurrentUnitCount--;
         GD.Print("death");
         unitIsDead = true;
         _animatedSprite.Stop();
@@ -87,7 +88,6 @@ public partial class EnemyBaseUnit : CharacterBody2D
 
     public virtual void OnAreaEntered(Node2D node)
     {
-        
         if (node is BaseUnit unit)
         {
             if (inBasePlayer == false)
@@ -121,7 +121,6 @@ public partial class EnemyBaseUnit : CharacterBody2D
     
     public virtual void OnAreaExited(Node2D node)
     {
-        
         isEnemy = true;
         MoveSpeed = 40.0f;
         timer.Stop();
@@ -129,16 +128,11 @@ public partial class EnemyBaseUnit : CharacterBody2D
 
     public virtual void OnAreaToAreaNtered(Area2D area)
     {
-        if (area.Name == "AreaPlayer")
-        {
-            
-        }
-        
-        else if (area.Name == "DetectedUnit")
+        if (area.Name == "AreaEnemyBase")
         {
             GD.Print("моя база");
         }
-        else
+        else if (area.Name == "AreaBasePlayer")
         {
             inBasePlayer = true;
             isEnemy = true;
@@ -148,7 +142,6 @@ public partial class EnemyBaseUnit : CharacterBody2D
 
         }
 
-        
     }
 
     public virtual void OnAreaToAreaExited(Area2D area)

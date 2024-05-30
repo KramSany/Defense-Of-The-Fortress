@@ -42,11 +42,9 @@ public partial class BaseEnemy : Node2D
 
 	private void _on_timer_timeout() // Timer??
 	{
-		progressBar.Value-= unitInAreaBase.DamagePerSecnod;
-		HealthBaseEnemy -= unitInAreaBase.DamagePerSecnod;
+		progressBar.Value-= unitInAreaBase.DamagePerSecond;
+		HealthBaseEnemy -= unitInAreaBase.DamagePerSecond;
 		unitInAreaBase.TakeDamage(Damage);
-		
-		
 	}
 
 	private void DeathBaseEnemy() // ??

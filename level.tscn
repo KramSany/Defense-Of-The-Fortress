@@ -1,16 +1,17 @@
-[gd_scene load_steps=14 format=3 uid="uid://vrr1og36hhhc"]
+[gd_scene load_steps=15 format=3 uid="uid://vrr1og36hhhc"]
 
 [ext_resource type="Texture2D" uid="uid://ds3s5ht5p02bw" path="res://background/background_layer_1.png" id="1_6pf6w"]
+[ext_resource type="Script" path="res://Level.cs" id="1_dcer8"]
 [ext_resource type="Texture2D" uid="uid://dhewmcwaesm8o" path="res://background/background_layer_2.png" id="2_itc5r"]
 [ext_resource type="Texture2D" uid="uid://c00sgkdfo08dy" path="res://background/background_layer_3.png" id="3_qatcq"]
 [ext_resource type="Texture2D" uid="uid://ciyhtsdjfqyqd" path="res://decorations/oak_woods_tileset.png" id="4_y2o8a"]
 [ext_resource type="Script" path="res://Player/MoneyBase.cs" id="6_p2ues"]
 [ext_resource type="Script" path="res://Player/LabelHP.cs" id="7_8iqhq"]
+[ext_resource type="Texture2D" uid="uid://dkyaeeo0h41wg" path="res://Player/Persons/Woodcutter/Woodcutter.png" id="7_hckgr"]
 [ext_resource type="PackedScene" uid="uid://uhkdst5dwarn" path="res://Player/BasePlayer/BasePlayer.tscn" id="8_dj5gg"]
 [ext_resource type="Script" path="res://ControllerCamera.cs" id="9_r6hi1"]
-[ext_resource type="PackedScene" uid="uid://bw0pddfv6c64i" path="res://Enemy/BaseEnemy/base_enemy.tscn" id="9_yahys"]
-[ext_resource type="PackedScene" uid="uid://c2b7flo0ngql5" path="res://Enemy/EnemyUnits/enemy_axe_player.tscn" id="10_cdxbl"]
-[ext_resource type="PackedScene" uid="uid://dv4857mlnxx0h" path="res://Player/Persons/Woodcutter/AxeMan.tscn" id="11_sqt7p"]
+[ext_resource type="PackedScene" uid="uid://c3kqknnve2uxv" path="res://EnemyBaseNew.tscn" id="11_42cgu"]
+[ext_resource type="AudioStream" uid="uid://bl6536nn7ldn3" path="res://Music/Backsound3.mp3" id="11_x1qes"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_onwcy"]
 texture = ExtResource("4_y2o8a")
@@ -1365,6 +1366,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_onwcy")
 
 [node name="Map" type="Node2D"]
+script = ExtResource("1_dcer8")
 
 [node name="BG" type="ParallaxBackground" parent="."]
 
@@ -1423,10 +1425,13 @@ script = ExtResource("6_p2ues")
 [node name="Add axe man" type="Button" parent="CanvasLayer"]
 offset_left = 38.0
 offset_top = 127.0
-offset_right = 169.0
-offset_bottom = 167.0
-text = "Axe Man
-100"
+offset_right = 140.0
+offset_bottom = 201.0
+text = "100"
+icon = ExtResource("7_hckgr")
+alignment = 0
+icon_alignment = 2
+expand_icon = true
 
 [node name="Button2" type="Button" parent="CanvasLayer"]
 offset_left = 209.0
@@ -1435,6 +1440,13 @@ offset_right = 340.0
 offset_bottom = 167.0
 text = "Sword Man
 250"
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 417.0
+offset_top = 11.0
+offset_right = 535.0
+offset_bottom = 48.0
+text = "Прокачка"
 
 [node name="Base" parent="." instance=ExtResource("8_dj5gg")]
 position = Vector2(95, 525)
@@ -1446,26 +1458,15 @@ zoom = Vector2(1.5, 1.5)
 process_callback = 0
 script = ExtResource("9_r6hi1")
 
-[node name="BaseEnemy" parent="." instance=ExtResource("9_yahys")]
+[node name="EnemyBase" parent="." instance=ExtResource("11_42cgu")]
 z_index = -1
-position = Vector2(507, 440)
+position = Vector2(607, 360)
 
-[node name="ProgressBar" type="ProgressBar" parent="BaseEnemy"]
-offset_left = -98.0
-offset_top = -183.0
-offset_right = 109.0
-offset_bottom = -156.0
-value = 100.0
-
-[node name="Timer" type="Timer" parent="BaseEnemy"]
-
-[node name="EnemyAxePlayer" parent="." instance=ExtResource("10_cdxbl")]
-position = Vector2(673, 556)
-
-[node name="AxeMan" parent="." instance=ExtResource("11_sqt7p")]
-position = Vector2(175, 556)
-collision_mask = 1
+[node name="LevelMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_x1qes")
+volume_db = -10.0
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/Add axe man" to="Base" method="AddAxeUnitBtn"]
 [connection signal="pressed" from="CanvasLayer/Button2" to="Base" method="AddSwordUnitBtn"]
-[connection signal="timeout" from="BaseEnemy/Timer" to="BaseEnemy" method="_on_timer_timeout"]
+[connection signal="pressed" from="CanvasLayer/Button" to="Base" method="OpenUpgradeMenu"]

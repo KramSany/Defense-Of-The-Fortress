@@ -10,9 +10,9 @@ public partial class SwordUnit : BaseUnit
     public SwordUnit()
     {
         Health = helath;
-        DamagePerSecnod = damagePerSecond;
+        DamagePerSecond = damagePerSecond;
     }
-   private void _on_area_2d_body_entered(Node2D node)
+    private void _on_area_2d_body_entered(Node2D node)
     {
         OnAreaEntered(node);
     }
@@ -21,4 +21,9 @@ public partial class SwordUnit : BaseUnit
     {
         OnAreaExited(node);
     }
+    private void _on_area_player_area_entered(Area2D area2D)
+    {
+        OnAreaPlayerEnyered(area2D);
+    }
+
 }
