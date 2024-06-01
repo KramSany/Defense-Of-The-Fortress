@@ -5,10 +5,13 @@ using System.Diagnostics;
 
 public partial class leveldesign : Node2D
 {
-	private AudioStreamPlayer2D _musicPlayer;
+    private AudioStreamPlayer2D _musicPlayer;
+
     public override void _Ready()
     {
         _musicPlayer = GetNode<AudioStreamPlayer2D>("MusicPlayer");
+        _musicPlayer.AddToGroup("AudioPlayers");
+        _musicPlayer.VolumeDb = GlobalVolume.VolumeDb;
     }
 
     public override void _Process(double delta)
@@ -27,7 +30,8 @@ public partial class leveldesign : Node2D
 
     private void SwitchToSettingsMenu()
     {
-		Node main = ResourceLoader.Load<PackedScene>("res://SettingsScene.tscn").Instantiate();
+        Node main = ResourceLoader.Load<PackedScene>("res://SettingsScene.tscn").Instantiate();
         GetTree().Root.AddChild(main);
     }
 }
+

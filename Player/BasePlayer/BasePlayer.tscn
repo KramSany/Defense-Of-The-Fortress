@@ -18,4 +18,13 @@ texture = ExtResource("1_2nimk")
 position = Vector2(-3, 2)
 shape = SubResource("RectangleShape2D_2snir")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="DamageTimer" type="Timer" parent="."]
+
+[node name="MoneyTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="area_entered" from="AreaBasePlayer" to="." method="OnAreaBasePlayerAreaEntered"]
+[connection signal="area_exited" from="AreaBasePlayer" to="." method="OnAreaBasePlayerAreaExited"]
+[connection signal="timeout" from="DamageTimer" to="." method="TimeOutDamage"]
+[connection signal="timeout" from="MoneyTimer" to="." method="OnMoneyTimerTimeout"]

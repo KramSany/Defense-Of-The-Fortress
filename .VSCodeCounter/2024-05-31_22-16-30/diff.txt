@@ -1,0 +1,151 @@
+Date : 2024-05-31 22:16:30
+Directory : d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress
+Total : 112 files,  2984 codes, 0 comments, 590 blanks, all 3574 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| GDResource |         93 |      2,611 |          0 |        554 |      3,165 |
+| GDScene    |          6 |        192 |          0 |         40 |        232 |
+| C#         |         13 |        181 |          0 |         -4 |        177 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                               |        112 |      2,984 |          0 |        590 |      3,574 |
+| . (Files)                                                                                       |         11 |        293 |          9 |         51 |        353 |
+| Enemy                                                                                           |          3 |          0 |         -9 |        -21 |        -30 |
+| Enemy\BaseEnemy                                                                                 |          2 |          0 |         -9 |        -20 |        -29 |
+| Enemy\EnemyUnits                                                                                |          1 |          0 |          0 |         -1 |         -1 |
+| Icons                                                                                           |         88 |      2,552 |          0 |        528 |      3,080 |
+| Icons\1x                                                                                        |         88 |      2,552 |          0 |        528 |      3,080 |
+| Music                                                                                           |          4 |         56 |          0 |         24 |         80 |
+| Player                                                                                          |          6 |         83 |          0 |          8 |         91 |
+| Player (Files)                                                                                  |          1 |         -1 |          0 |         -8 |         -9 |
+| Player\BasePlayer                                                                               |          2 |         69 |          0 |         14 |         83 |
+| Player\Mobs                                                                                     |          2 |          5 |          0 |          1 |          6 |
+| Player\Persons                                                                                  |          1 |         10 |          0 |          1 |         11 |
+| Player\Persons\Woodcutter                                                                       |          1 |         10 |          0 |          1 |         11 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                        | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\EnemyBaseNew.cs                      | C#         |         24 |          0 |         -9 |         15 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\BaseEnemy.cs         | C#         |          0 |          0 |         -2 |         -2 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\EnemyBaseUnit.cs     | C#         |          0 |         -9 |        -18 |        -27 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\EnemyUnits\EnemyAxePlayer.cs   | C#         |          0 |          0 |         -1 |         -1 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 1.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 10.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 11.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 12.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 13.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 14.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 15.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 16.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 17.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 18.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 19.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 2.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 20.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 21.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 22.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 23.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 24.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 25.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 26.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 27.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 28.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 29.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 3.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 30.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 31.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 32.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 33.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 34.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 35.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 36.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 37.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 38.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 39.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 4.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 40.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 41.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 42.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 43.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 44.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 45.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 46.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 47.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 48.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 49.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 5.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 50.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 51.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 52.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 53.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 54.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 55.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 56.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 57.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 58.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 59.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 6.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 60.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 61.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 62.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 63.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 64.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 65.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 66.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 67.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 68.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 69.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 7.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 70.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 71.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 72.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 73.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 74.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 75.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 76.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 77.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 78.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 79.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 8.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 80.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 81.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 82.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 83.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 84.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 85.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 86.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 87.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 88.png.import         | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 9.png.import          | GDResource |         29 |          0 |          6 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Level.cs                             | C#         |         18 |          5 |          4 |         27 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Music\Backsound.mp3.import           | GDResource |         14 |          0 |          6 |         20 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Music\Backsound2.mp3.import          | GDResource |         14 |          0 |          6 |         20 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Music\Backsound3.mp3.import          | GDResource |         14 |          0 |          6 |         20 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Music\MainSound.mp3.import           | GDResource |         14 |          0 |          6 |         20 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\BasePlayer\BasePlayer.cs      | C#         |         66 |          0 |         13 |         79 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\BasePlayer\BasePlayer.tscn    | GDScene    |          3 |          0 |          1 |          4 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\BaseUnit.cs                   | C#         |         -1 |          0 |         -8 |         -9 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Mobs\SwordPerson.tscn         | GDScene    |          1 |          0 |          0 |          1 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Mobs\SwordUnit.cs             | C#         |          4 |          0 |          1 |          5 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\AxeUnit.cs | C#         |         10 |          0 |          1 |         11 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\SettingsScene.cs                     | C#         |         36 |          2 |          9 |         47 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\SettingsScene.tscn                   | GDScene    |         27 |          0 |          7 |         34 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\UIElements.cs                        | C#         |         -4 |          0 |          0 |         -4 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\UpgradeMenu.cs                       | C#         |         21 |          2 |          9 |         32 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\UpgradeMenu.tscn                     | GDScene    |         45 |          0 |         10 |         55 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\level.tscn                           | GDScene    |         86 |          0 |         17 |        103 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\leveldesign.cs                       | C#         |          7 |          0 |         -3 |          4 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\leveldesign.tscn                     | GDScene    |         30 |          0 |          5 |         35 |
+| d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\project.godot                        | GDResource |          3 |          0 |          2 |          5 |
+| Total                                                                                           |            |      2,984 |          0 |        590 |      3,574 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

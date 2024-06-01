@@ -1,32 +1,32 @@
 using Godot;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
 using System.Threading.Tasks;
-using System.Timers;
 
 public partial class EnemyBaseUnit : CharacterBody2D
 {
     public EnemyBaseNew enemyBaseNewInstance = new EnemyBaseNew();
-    System.Timers.Timer timer = new(1000);
+    private Timer timer;
     private BaseUnit playerUnit;
     protected AnimatedSprite2D _animatedSprite;
     public float Health { get; set; }
-    public float DamagePerSecnod {get; set; }
+    public float DamagePerSecnod { get; set; }
     protected float MoveSpeed = 40.0f;
     protected Vector2 gravity = new Vector2(0, 800.0f);
 
     protected bool isEnemy = false;
     public bool unitIsDead = false;
     private bool inBasePlayer = false;
-        private ProgressBar healthBar;
+    private ProgressBar healthBar;
 
     public override void _Ready()
     {
         healthBar = GetNode<ProgressBar>("ProgressBar");
         healthBar.MaxValue = Health;
-        timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+        timer = new Timer();
+        timer.WaitTime = 1.0f; // 1000ms
+        Callable onTimedEventCallable = new Callable(this, nameof(OnTimedEvent));
+        timer.Connect("timeout", onTimedEventCallable);
+        AddChild(timer);
         _animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
     }
 
@@ -43,13 +43,13 @@ public partial class EnemyBaseUnit : CharacterBody2D
 
         if (MoveSpeed <= 0 && !isEnemy && !unitIsDead)
         {
-            _animatedSprite.Play("Idle");
+            _animatedSprite.CallDeferred("play", "Idle"); // Используем CallDeferred
         }
         else if (MoveSpeed > 0)
         {
-            _animatedSprite.Play("Walk");
+            _animatedSprite.CallDeferred("play", "Walk"); // Используем CallDeferred
         }
-        healthBar.Value = Health;
+            healthBar.Value = Health;
 
         MoveAndSlide();
         MoveRight();
@@ -72,7 +72,6 @@ public partial class EnemyBaseUnit : CharacterBody2D
         {
             Death();
         }
-        // Теперь когда мы подходим к базе сделать так, чтобы не был +1 урон после смерти игрока
     }
 
     internal async void Death()
@@ -80,87 +79,68 @@ public partial class EnemyBaseUnit : CharacterBody2D
         HelperUnitCount.CurrentUnitCount--;
         GD.Print("death");
         unitIsDead = true;
-        _animatedSprite.Stop();
-        _animatedSprite.Play("Death");
+        _animatedSprite.CallDeferred("stop"); // Используем CallDeferred
+        _animatedSprite.CallDeferred("play", "Death"); // Используем CallDeferred
+
         await Task.Delay(800); // delay for animation "death" playing until end. Without this delay animation is not ended because method QueueFree() will clear object
         QueueFree();
     }
 
     public virtual void OnAreaEntered(Node2D node)
-    {
-        if (node is BaseUnit unit)
         {
-            if (inBasePlayer == false)
+            if (node is BaseUnit unit)
             {
-                GD.Print("В поле зрения игрок");
-                playerUnit = unit;
+            if (!inBasePlayer)
+                {
+                    GD.Print("В поле зрения игрок");
+                    playerUnit = unit;
+                    isEnemy = true;
+                    MoveSpeed = 0.0f;
+                    _animatedSprite.CallDeferred("play", "Attack"); // Используем CallDeferred
+                    timer.Start();
+                }
+            }
+            else if (node is EnemyBaseUnit)
+            {
+                MoveSpeed = 0.0f;
+            }
+    }
+
+    public virtual void OnAreaExited(Node2D node)
+        {
+            isEnemy = false;
+            MoveSpeed = 40.0f;
+            timer.Stop();
+        }
+
+    public virtual void OnAreaToAreaEntered(Area2D area)
+        {
+            if (area.Name == "AreaEnemyBase")
+            {
+                GD.Print("моя база");
+            }
+            else if (area.Name == "AreaBasePlayer")
+            {
+                inBasePlayer = true;
                 isEnemy = true;
                 MoveSpeed = 0.0f;
-                _animatedSprite.Play("Attack");
+                _animatedSprite.CallDeferred("play", "Attack"); // Используем CallDeferred
                 timer.Start();
-
             }
-
         }
-        else if (node is EnemyBaseUnit)
-        {
-            // Handle the case when a non-enemy BaseUnit is encountered
-            MoveSpeed = 0.0f;
-        }
-        // else
-        // {
-        //     // Handle other cases (e.g., Node2D instances that are not EnemyBaseUnit or BaseUnit)
-        //     GD.Print($"Entered base area");
-        //     isEnemy = true;
-        //     MoveSpeed = 0.0f;
-        //     _animatedSprite.Play("Attack");
-        // }
-
-        
-    }
-    
-    public virtual void OnAreaExited(Node2D node)
-    {
-        isEnemy = true;
-        MoveSpeed = 40.0f;
-        timer.Stop();
-}
-
-    public virtual void OnAreaToAreaNtered(Area2D area)
-    {
-        if (area.Name == "AreaEnemyBase")
-        {
-            GD.Print("моя база");
-        }
-        else if (area.Name == "AreaBasePlayer")
-        {
-            inBasePlayer = true;
-            isEnemy = true;
-            MoveSpeed = 0.0f;
-            _animatedSprite.Play("Attack");
-            timer.Start();
-
-        }
-
-    }
 
     public virtual void OnAreaToAreaExited(Area2D area)
+        {
+            timer.Stop();
+        }
+
+    private void OnTimedEvent()
     {
-        timer.Stop();
-    }
-
-
-
-
-    private void OnTimedEvent(Object source, ElapsedEventArgs e)
-    {
-        if (playerUnit.unitIsDead == false)
+        if (playerUnit != null && !playerUnit.unitIsDead)
         {
             GD.Print("Урон!");
-            playerUnit.TakeDamage(DamagePerSecnod);
+            // Используем CallDeferred для вызова TakeDamage в основном потоке
+            playerUnit.CallDeferred(nameof(BaseUnit.TakeDamage), DamagePerSecnod);
         }
-        
-        
     }
-
 }

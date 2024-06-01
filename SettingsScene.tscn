@@ -18,6 +18,11 @@ offset_top = 568.0
 offset_right = 691.0
 offset_bottom = 619.0
 
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Музыка"
+horizontal_alignment = 1
+
 [node name="HSlider" type="HSlider" parent="VBoxContainer"]
 layout_mode = 2
 max_value = 1.0

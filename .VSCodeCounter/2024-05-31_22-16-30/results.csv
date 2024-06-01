@@ -1,0 +1,195 @@
+"filename", "language", "GDScene", "C#", "GDResource", "XML", "Properties", "GDScript", "comment", "blank", "total"
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\BgMove.cs", "C#", 0, 13, 0, 0, 0, 0, 2, 5, 20
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\ControllerCamera.cs", "C#", 0, 52, 0, 0, 0, 0, 0, 12, 64
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Diplom17.11.2023.csproj", "XML", 0, 0, 0, 7, 0, 0, 0, 0, 7
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\EnemyBaseNew.cs", "C#", 0, 102, 0, 0, 0, 0, 6, 20, 128
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\EnemyBaseNew.tscn", "GDScene", 33, 0, 0, 0, 0, 0, 0, 11, 44
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\BaseEnemy.cs", "C#", 0, 49, 0, 0, 0, 0, 0, 10, 59
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\EnemyBaseUnit.cs", "C#", 0, 129, 0, 0, 0, 0, 1, 16, 146
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\base_enemy.tscn", "GDScene", 23, 0, 0, 0, 0, 0, 0, 11, 34
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\BaseEnemy\house.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\EnemyUnits\EnemyAxePlayer.cs", "C#", 0, 26, 0, 0, 0, 0, 0, 7, 33
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Enemy\EnemyUnits\enemy_axe_player.tscn", "GDScene", 203, 0, 0, 0, 0, 0, 0, 36, 239
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 1.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 10.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 11.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 12.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 13.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 14.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 15.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 16.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 17.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 18.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 19.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 2.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 20.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 21.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 22.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 23.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 24.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 25.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 26.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 27.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 28.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 29.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 3.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 30.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 31.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 32.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 33.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 34.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 35.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 36.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 37.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 38.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 39.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 4.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 40.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 41.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 42.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 43.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 44.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 45.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 46.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 47.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 48.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 49.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 5.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 50.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 51.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 52.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 53.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 54.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 55.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 56.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 57.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 58.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 59.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 6.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 60.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 61.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 62.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 63.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 64.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 65.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 66.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 67.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 68.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 69.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 7.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 70.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 71.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 72.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 73.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 74.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 75.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 76.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 77.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 78.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 79.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 8.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 80.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 81.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 82.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 83.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 84.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 85.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 86.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 87.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 88.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Icons\1x\Asset 9.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Level.cs", "C#", 0, 18, 0, 0, 0, 0, 5, 4, 27
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Music\Backsound.mp3.import", "GDResource", 0, 0, 14, 0, 0, 0, 0, 6, 20
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Music\Backsound2.mp3.import", "GDResource", 0, 0, 14, 0, 0, 0, 0, 6, 20
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Music\Backsound3.mp3.import", "GDResource", 0, 0, 14, 0, 0, 0, 0, 6, 20
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Music\MainSound.mp3.import", "GDResource", 0, 0, 14, 0, 0, 0, 0, 6, 20
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\BasePlayer\BasePlayer.cs", "C#", 0, 113, 0, 0, 0, 0, 4, 27, 144
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\BasePlayer\BasePlayer.tscn", "GDScene", 17, 0, 0, 0, 0, 0, 0, 9, 26
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\BaseUnit.cs", "C#", 0, 119, 0, 0, 0, 0, 26, 21, 166
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\LabelHP.cs", "C#", 0, 12, 0, 0, 0, 0, 2, 3, 17
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Mobs\SwordPerson.tscn", "GDScene", 204, 0, 0, 0, 0, 0, 0, 36, 240
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Mobs\SwordUnit.cs", "C#", 0, 26, 0, 0, 0, 0, 0, 4, 30
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\MoneyBase.cs", "C#", 0, 12, 0, 0, 0, 0, 2, 3, 17
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_attack1.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_attack2.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_attack3.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_climb.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_craft.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_death.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_hurt.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_idle.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_jump.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_push.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_run.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\GraveRobber\GraveRobber_walk.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_attack1.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_attack2.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_attack3.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_climb.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_craft.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_death.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_hurt.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_idle.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_jump.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_push.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_run.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\SteamMan\SteamMan_walk.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\AxeMan.tscn", "GDScene", 201, 0, 0, 0, 0, 0, 0, 36, 237
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\AxeUnit.cs", "C#", 0, 39, 0, 0, 0, 0, 0, 6, 45
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_attack1.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_attack2.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_attack3.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_climb.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_craft.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_death.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_hurt.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_idle.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_jump.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_push.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_run.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\Woodcutter\Woodcutter_walk.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Player\Persons\char_blue.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\SettingsScene.cs", "C#", 0, 36, 0, 0, 0, 0, 2, 9, 47
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\SettingsScene.tscn", "GDScene", 27, 0, 0, 0, 0, 0, 0, 7, 34
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Attack.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Death.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Idle.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Shield.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Take Hit.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\Skeleton\Walk.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\UIElements.cs", "C#", 0, 25, 0, 0, 0, 0, 0, 11, 36
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\UnitType.cs", "C#", 0, 9, 0, 0, 0, 0, 0, 1, 10
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\UpgradeMenu.cs", "C#", 0, 21, 0, 0, 0, 0, 2, 9, 32
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\UpgradeMenu.tscn", "GDScene", 45, 0, 0, 0, 0, 0, 0, 10, 55
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\addons\AS2P\InspectorConvertor.gd", "GDScript", 0, 0, 0, 0, 0, 56, 3, 26, 85
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\addons\AS2P\NodeSelectorProperty.gd", "GDScript", 0, 0, 0, 0, 0, 75, 5, 39, 119
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\addons\AS2P\plugin.cfg", "Properties", 0, 0, 0, 0, 6, 0, 0, 2, 8
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\addons\AS2P\plugin.gd", "GDScript", 0, 0, 0, 0, 0, 16, 2, 8, 26
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\background\background_layer_1.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\background\background_layer_2.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\background\background_layer_3.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\bg.tscn", "GDScene", 28, 0, 0, 0, 0, 0, 0, 9, 37
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\fence_1.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\fence_2.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\grass_1.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\grass_2.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\grass_3.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\lamp.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\oak_woods_tileset.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\rock_1.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\rock_2.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\rock_3.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\shop.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\shop_anim.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\decorations\sign.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\house1.png.import", "GDResource", 0, 0, 29, 0, 0, 0, 0, 6, 35
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\icon.svg", "XML", 0, 0, 0, 1, 0, 0, 0, 1, 2
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\icon.svg.import", "GDResource", 0, 0, 32, 0, 0, 0, 0, 6, 38
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\level.tscn", "GDScene", 1521, 0, 0, 0, 0, 0, 0, 39, 1560
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\leveldesign.cs", "C#", 0, 28, 0, 0, 0, 0, 0, 6, 34
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\leveldesign.tscn", "GDScene", 53, 0, 0, 0, 0, 0, 0, 12, 65
+"d:\Simple2dPlatformerSurvival-main\Defense-Of-The-Fortress\project.godot", "GDResource", 0, 0, 15, 0, 0, 0, 7, 12, 34
+"Total", "-", 2355, 829, 4511, 8, 6, 147, 69, 1420, 9345

@@ -187,7 +187,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1tw0d"]
-size = Vector2(3, 13.5)
+size = Vector2(3, 5)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_516v2"]
 bg_color = Color(0.815686, 0.223529, 0.243137, 1)
@@ -211,8 +211,8 @@ position = Vector2(-4, 1)
 shape = SubResource("CapsuleShape2D_g07se")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, 1)
-scale = Vector2(0.573333, 0.573333)
+position = Vector2(1, -6)
+scale = Vector2(0.882917, 0.882917)
 sprite_frames = SubResource("SpriteFrames_5uctq")
 animation = &"Walk"
 autoplay = "Walk"
@@ -220,7 +220,7 @@ autoplay = "Walk"
 [node name="AreaPlayer" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaPlayer"]
-position = Vector2(6, 1.25)
+position = Vector2(6, 0)
 shape = SubResource("RectangleShape2D_1tw0d")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]

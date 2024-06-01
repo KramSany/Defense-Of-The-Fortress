@@ -1,12 +1,12 @@
 using Godot;
 using System;
 
-public partial class EnemyAxePlayer : EnemyBaseUnit
+public partial class EnemySwordUnit : EnemyBaseUnit
 {
-	public EnemyAxePlayer()
+	public EnemySwordUnit()
     {
-        Health = 30.0f;
-        DamagePerSecnod = 15;
+        Health = 25.0f;
+        DamagePerSecnod = 40;
     }
 	private void _on_area_2d_body_entered(Node2D node)
     {
@@ -27,6 +27,4 @@ public partial class EnemyAxePlayer : EnemyBaseUnit
     {
         OnAreaToAreaExited(area);
     }
-
-
 }

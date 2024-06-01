@@ -18,11 +18,7 @@ public static class UIElementsPlayer
         Health = helathPointBase;
 
     }
-
-    public static float SetHealthBase()
-    {
-        return Health;
-    }
+    
 
     public static void GetMoneyBase(float helathPointBase)
     {

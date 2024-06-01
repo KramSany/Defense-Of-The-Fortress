@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class Level : Node2D
+public partial class MainLevel : Node2D
 {
     private Node upgradeMenuContainer;
     private AudioStreamPlayer2D _musicPlayer;

@@ -6,9 +6,9 @@ using System.Timers;
 public partial class BaseUnit : CharacterBody2D
 {
     System.Timers.Timer timer = new(1000);
-     protected AnimatedSprite2D _animatedSprite;
-     public float Health { get; set; }
-     public float DamagePerSecond {get; set; }
+    protected AnimatedSprite2D _animatedSprite;
+    public float Health { get; set; }
+    public float DamagePerSecond {get; set; }
     protected float MoveSpeed = 40.0f;
     protected Vector2 gravity = new Vector2(0, 800.0f);
     private static EnemyBaseUnit enemyBaseUnit;
@@ -158,7 +158,6 @@ public partial class BaseUnit : CharacterBody2D
                 QueueFree();
             }
     }
-    
 
 }
 

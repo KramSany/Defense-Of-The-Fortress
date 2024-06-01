@@ -11,6 +11,6 @@ public partial class LabelHP : Label
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		Text = "HP " + UIElementsPlayer.SetHealthBase().ToString();
+		Text = "HP " + UIElementsPlayer.Health;
 	}
 }
