@@ -67,6 +67,9 @@ public partial class EnemyBaseUnit : CharacterBody2D
 
     internal void TakeDamage(float damage)
     {
+        if (unitIsDead)
+        return;
+
         Health -= damage;
         if (Health <= 0)
         {
@@ -76,14 +79,20 @@ public partial class EnemyBaseUnit : CharacterBody2D
 
     internal async void Death()
     {
+        if (unitIsDead)
+        return;
+
+        unitIsDead = true;
         HelperUnitCount.CurrentUnitCount--;
         GD.Print("death");
-        unitIsDead = true;
-        _animatedSprite.CallDeferred("stop"); // Используем CallDeferred
-        _animatedSprite.CallDeferred("play", "Death"); // Используем CallDeferred
-
+        _animatedSprite.CallDeferred("stop");
+        _animatedSprite.CallDeferred("play", "Death");
         await Task.Delay(800); // delay for animation "death" playing until end. Without this delay animation is not ended because method QueueFree() will clear object
-        QueueFree();
+        // Проверяем, существует ли объект перед вызовом QueueFree
+        if (IsInstanceValid(this))
+        {
+            QueueFree();
+        }
     }
 
     public virtual void OnAreaEntered(Node2D node)

@@ -8,9 +8,9 @@ public partial class BasePlayer : Node2D
     private string axeUnit = "res://Player/Persons/Woodcutter/AxeMan.tscn";
     private string swordUnit = "res://Player/Mobs/SwordPerson.tscn";
 
-    private float helathPointBase = 1000.0f;
-    public static float _money = 500.0f;
-    private static float _damagePerSecond = 100.0f;
+    [Export] private float helathPointBase = 1000.0f;
+    [Export] public static float _money = 500.0f;
+    [Export] private static float _damagePerSecond = 100.0f;
 
     private float costAxeUnit = 100.0f;
     private float costSwordUnit = 250.0f;
@@ -24,10 +24,14 @@ public partial class BasePlayer : Node2D
     private Node upgradeMenuContainer;
     private Node upgradeMenuInstance;
 
+    private Node loseScene;
+
     private EnemyBaseUnit unitInAreaBase;
 
     Timer damageTimer = new Timer();
     Timer moneyTimer = new Timer();
+
+
 
     
 
@@ -52,6 +56,7 @@ public partial class BasePlayer : Node2D
 
     public override void _Ready()
     {
+        loseScene = ResourceLoader.Load<PackedScene>("res://lose_content.tscn").Instantiate();
         Engine.TimeScale = 1;
         upgradeMenuContainer = GetNode<Node>("/root/Map/CanvasLayer");
         if (upgradeMenuContainer == null) GD.Print("Меню контейнера нет");
@@ -129,24 +134,23 @@ public partial class BasePlayer : Node2D
 
     private async void TimeOutDamage()
     {
-        if (DeathBaseEnemy())
-        {
-            Engine.TimeScale = 0;
-            await Task.Delay(5000);
-            GetTree().ChangeSceneToFile("res://leveldesign.tscn");
-            return;
-        }
+            // Наносим урон базе
         helathPointBase -= unitInAreaBase.DamagePerSecnod;
         unitInAreaBase.TakeDamage(_damagePerSecond);
+
+        // Проверяем, что база мертва
+        if (helathPointBase <= 0)
+        {
+            Engine.TimeScale = 0;
+            await Task.Delay(2000);
+
+            GetTree().Root.AddChild(loseScene);
+        }
     }
 
     private bool DeathBaseEnemy()
     {
-        if (helathPointBase <= 0)
-        {
-            return true;
-        }
-        return false;
+        return helathPointBase <= 0;
     }
 
     private void OnMoneyTimerTimeout()
@@ -159,5 +163,4 @@ public partial class BasePlayer : Node2D
         _damagePerSecond += amount;
         GD.Print("Base Damage upgraded to: " + _damagePerSecond);
     }
-    
 }
