@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://vrr1og36hhhc"]
+[gd_scene load_steps=27 format=3 uid="uid://vrr1og36hhhc"]
 
 [ext_resource type="Texture2D" uid="uid://ds3s5ht5p02bw" path="res://background/background_layer_1.png" id="1_6pf6w"]
 [ext_resource type="Script" path="res://MainLevel.cs" id="1_ey56r"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://uhkdst5dwarn" path="res://Player/BasePlayer/BasePlayer.tscn" id="8_dj5gg"]
 [ext_resource type="Texture2D" uid="uid://1ntct1ssmaia" path="res://Player/Persons/GraveRobber/GraveRobber.png" id="9_2gaaq"]
 [ext_resource type="Script" path="res://ControllerCamera.cs" id="9_r6hi1"]
+[ext_resource type="PackedScene" uid="uid://dplf7djww3opq" path="res://HealthPointUI.tscn" id="10_6lacf"]
+[ext_resource type="Texture2D" uid="uid://ded63cfdbl7mq" path="res://Icons/coin.png" id="11_4q6li"]
 [ext_resource type="PackedScene" uid="uid://c3kqknnve2uxv" path="res://EnemyBaseNew.tscn" id="11_42cgu"]
 [ext_resource type="AudioStream" uid="uid://bl6536nn7ldn3" path="res://Music/Backsound3.mp3" id="11_x1qes"]
 [ext_resource type="Texture2D" uid="uid://byhwyqju6ecqc" path="res://decorations/lamp.png" id="14_8tods"]
@@ -1425,6 +1427,7 @@ layer_0/tile_data = PackedInt32Array(2359296, 65536, 0, 2359297, 131072, 0, 2359
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HealthBase" type="Label" parent="CanvasLayer"]
+visible = false
 offset_left = 57.0
 offset_top = 80.0
 offset_right = 172.0
@@ -1434,12 +1437,11 @@ text = "Здоровье"
 script = ExtResource("7_8iqhq")
 
 [node name="MoneyBase" type="Label" parent="CanvasLayer"]
-offset_left = 57.0
-offset_top = 32.0
-offset_right = 172.0
-offset_bottom = 86.0
+offset_left = 119.0
+offset_top = 38.0
+offset_right = 229.0
+offset_bottom = 92.0
 theme_override_font_sizes/font_size = 30
-text = "Монеты "
 script = ExtResource("6_p2ues")
 
 [node name="Add axe man" type="Button" parent="CanvasLayer"]
@@ -1471,9 +1473,19 @@ offset_right = 535.0
 offset_bottom = 48.0
 text = "Улучшение"
 
+[node name="HealthPointUI" parent="CanvasLayer" instance=ExtResource("10_6lacf")]
+offset_left = 52.0
+offset_top = 87.0
+offset_right = -901.0
+offset_bottom = -512.0
+
+[node name="Coin" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(78, 58)
+scale = Vector2(0.0839843, 0.0712891)
+texture = ExtResource("11_4q6li")
+
 [node name="Base" parent="." instance=ExtResource("8_dj5gg")]
 position = Vector2(95, 527)
-helathPointBase = 10.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(209, 479)
@@ -1489,6 +1501,8 @@ script = ExtResource("9_r6hi1")
 [node name="EnemyBase" parent="." instance=ExtResource("11_42cgu")]
 z_index = -1
 position = Vector2(986, 361)
+minSpawnInterval = 3.0
+maxSpawnInterval = 7.0
 
 [node name="Lamp" type="Sprite2D" parent="."]
 position = Vector2(-96, 547)

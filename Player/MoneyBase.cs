@@ -11,6 +11,6 @@ public partial class MoneyBase : Label
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		Text = "Монеты " + UIElementsPlayer.SetMoneyBase().ToString();
+		Text = UIElementsPlayer.SetMoneyBase().ToString();
 	}
 }

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dplf7djww3opq"]
+
+[ext_resource type="Script" path="res://HealthUI.cs" id="1_oyp30"]
+[ext_resource type="Texture2D" uid="uid://bci6nb41v5ae" path="res://Icons/health_bar_decoration.png" id="2_yycs8"]
+[ext_resource type="Texture2D" uid="uid://dfloc3008s7f5" path="res://Icons/health_bar.png" id="3_700g1"]
+
+[node name="HealthPointUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oyp30")
+HeartTexture = ExtResource("2_yycs8")
+BarTexture = ExtResource("3_700g1")
+
+[node name="HeartRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 176.0
+offset_bottom = 40.0
+texture = ExtResource("2_yycs8")
+
+[node name="BarRect" type="TextureRect" parent="."]
+offset_left = 47.0
+offset_right = 173.0
+offset_bottom = 40.0
+texture = ExtResource("3_700g1")

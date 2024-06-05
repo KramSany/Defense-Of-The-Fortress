@@ -23,5 +23,6 @@ public partial class LoseContent : Control
 	private void OnBackToMenuPressed()
 	{
 	GetTree().ChangeSceneToFile("res://leveldesign.tscn");
+	QueueFree();
 	}
 }

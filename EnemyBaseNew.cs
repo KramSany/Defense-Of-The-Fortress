@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 public partial class EnemyBaseNew : Node2D
 {
@@ -24,10 +25,12 @@ public partial class EnemyBaseNew : Node2D
     public float Damage = 40.0f;
     bool death = false;
     private BaseUnit unitInAreaBase;
+    private Node winScene;
     private bool IsOurUnit = false;
 
     public override void _Ready()
     {
+        winScene = ResourceLoader.Load<PackedScene>("res://win_content.tscn").Instantiate();
         progressBar = GetNode<ProgressBar>("ProgressBar");
         progressBar.MaxValue = HealthBaseEnemy;
         damageTimer = GetNode<Timer>("DamageTimer");
@@ -42,7 +45,10 @@ public partial class EnemyBaseNew : Node2D
 
     public override void _Process(double delta)
     {
+        if (!death)
+    {
         DeathBaseEnemy();
+    }
     }
 
     private void OnDamageTimerTimeout()
@@ -115,14 +121,18 @@ public partial class EnemyBaseNew : Node2D
         }
     }
 
-    private void DeathBaseEnemy()
+    private async Task DeathBaseEnemy()
+{
+    if (HealthBaseEnemy <= 0 && !death)
     {
-        if (HealthBaseEnemy <= 0)
-        {
-            GD.Print("penis");
-            GetTree().ChangeSceneToFile("res://leveldesign.tscn");
-        }
+        death = true; // Помечаем, что объект уже умер, чтобы избежать повторного вызова этого метода
+
+        Engine.TimeScale = 0;
+        await Task.Delay(2000);
+
+        GetTree().Root.AddChild(winScene);
     }
+}
 
     private void OnAreaEntered(Node2D node)
     {

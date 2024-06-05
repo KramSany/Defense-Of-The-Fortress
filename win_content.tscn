@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsfgq1vt4fpui"]
+
+[ext_resource type="Script" path="res://LoseContent.cs" id="1_kynom"]
+
+[node name="WinContent" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_kynom")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 465.0
+offset_right = 761.0
+offset_bottom = 634.0
+color = Color(0.00784314, 0.00784314, 0.00784314, 0.643137)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 485.0
+offset_right = 761.0
+offset_bottom = 607.0
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Поздравляю Вас! Вы смогли одалеть этого босса. Ожидайте
+следующего босса."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rerun" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Заново"
+
+[node name="BackToMenu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "В меню"
+
+[connection signal="pressed" from="VBoxContainer/Rerun" to="." method="OnRerunPressed" flags=18]
+[connection signal="pressed" from="VBoxContainer/BackToMenu" to="." method="OnBackToMenuPressed" flags=18]

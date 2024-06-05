@@ -8,7 +8,7 @@ public partial class BasePlayer : Node2D
     private string axeUnit = "res://Player/Persons/Woodcutter/AxeMan.tscn";
     private string swordUnit = "res://Player/Mobs/SwordPerson.tscn";
 
-    [Export] private float helathPointBase = 1000.0f;
+    [Export] private float helathPointBase = 100.0f;
     [Export] public static float _money = 500.0f;
     [Export] private static float _damagePerSecond = 100.0f;
 

@@ -14,8 +14,6 @@ public partial class BaseUnit : CharacterBody2D
     private static EnemyBaseUnit enemyBaseUnit;
     private ProgressBar healthBar;
 
-
-
     protected bool isEnemy = false;
     public bool unitIsDead = false;
     private bool unitInBase = false;
@@ -66,7 +64,6 @@ public partial class BaseUnit : CharacterBody2D
     {
         if (area2D.Name == "AreaEnemyBase")
         {
-            GD.Print($"Entered base area");
             isEnemy = true;
             unitInBase = true;
             MoveSpeed = 0.0f;
@@ -149,17 +146,13 @@ public partial class BaseUnit : CharacterBody2D
 
     internal async void Death()
     {
-        if (_animatedSprite != null && !unitIsDead) 
+        if (_animatedSprite != null && !unitIsDead)
             {
-                unitIsDead = true; 
+                unitIsDead = true;
                 _animatedSprite?.Stop();
                 _animatedSprite?.Play("Death");
                 await Task.Delay(800);
                 QueueFree();
             }
     }
-
 }
-
-// Сделать хп бар для юнитов врага. Добавить новых юнитов
-//                 !!!СУПЕР ВАЖНО!!!
